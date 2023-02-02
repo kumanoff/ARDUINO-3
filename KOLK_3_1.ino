@@ -25,7 +25,7 @@ void loop() {
   Serial.print("Key : ");
   for(int i=0; i<12; i++) {
     Serial.print(addr[i], HEX); //побайтно данные ключа
-    EEPROM.update(i, addr[i]);//                                      clear it up 
+    EEPROM.update(i, addr[i]);// clear it up 
     EEPROM.update(i+12, addr[i]);
     Serial.print(" ");
   }
